@@ -41,11 +41,9 @@ function handleClick(e){
     //check for win
     //check for draw
     if(checkWin(currentClass)){
-        console.log('some one won')
         gameOver(false)
     }
     if(checkDraw()){
-        console.log('draw')
         gameOver(true)
     }
     swapTurns()
@@ -83,7 +81,7 @@ function gameOver(tie){
     if(tie){
        winningMessageText.innerText = 'Draw!'
     }else{
-        winningMessageText.innerText =  '${circleTurn ? "o" : "x"}'//todo fix this selector 
+        winningMessageText.innerText =  `${circleTurn ? "O Wins!" : "X Wins!"}`//todo fix this selector 
     }
     winningMessageEL.classList.add('show')
 }

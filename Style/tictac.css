@@ -72,7 +72,7 @@ body{
     position: absolute;
     width: calc(var(--mark-size) * .15);
     height: var(--mark-size);
-    background-color: black;
+    background-color: red;
 }
 
 .cell.x::before,
@@ -103,7 +103,7 @@ body{
 .board.circle .cell:not(.x):not(.circle):hover::before{
     width: calc(var(--mark-size));
     height: var(--mark-size);
-    background-color: black;
+    background-color: blue;
 }
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after{

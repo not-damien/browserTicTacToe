@@ -33,7 +33,7 @@ body{
 .cell{
    width: var(--cell-size);
    height: var(--cell-size);
-   background-color: white;
+   background-color:  transparent;
    border: 1px solid black;
    display: flex;
    justify-content: center;
@@ -72,7 +72,7 @@ body{
     position: absolute;
     width: calc(var(--mark-size) * .15);
     height: var(--mark-size);
-    background-color: red;
+    background-color: #ffc0cb;
 }
 
 .cell.x::before,
@@ -85,6 +85,11 @@ body{
     transform: rotate(-45deg);
 }
 
+body{
+	background-image: url("https://66.media.tumblr.com/2e4cc3e9489b92ebca94cf312a51c728/tumblr_ott2yxtnkM1w8sgt6o5_400.png")
+	
+
+}
 
 
 
@@ -103,7 +108,7 @@ body{
 .board.circle .cell:not(.x):not(.circle):hover::before{
     width: calc(var(--mark-size));
     height: var(--mark-size);
-    background-color: blue;
+    background-color: #92C5EB;
 }
 .cell.circle::after,
 .board.circle .cell:not(.x):not(.circle):hover::after{
@@ -129,6 +134,7 @@ body{
     align-items: center;
     color:white;
     font-size: 3rem;
+    font-family:"Comic Sans MS";
     flex-direction: column;
 }
 .winning-message button{
@@ -145,4 +151,7 @@ body{
 }
 .winning-message.show{
     display: flex;
+}
+h1{
+	font-family:"Comic Sans MS";
 }
